@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NLP Course Page</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6; /* Light gray background */
+        }
+        /* Custom styling for tables */
+        .course-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .course-table th,
+        .course-table td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #e5e7eb; /* Light border for rows */
+        }
+        .course-table th {
+            background-color: #f9fafb;
+            font-weight: 600;
+            color: #374151;
+        }
+        .course-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <div class="min-h-screen flex flex-col items-center justify-center py-10 px-4 sm:px-6 lg:px-8">
+        <!-- Header Section -->
+        <header class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-6 mb-8">
+            <div class="flex flex-col sm:flex-row items-center justify-between">
+                <div class="text-center sm:text-left mb-4 sm:mb-0">
+                    <h1 class="text-4xl font-extrabold text-gray-900 mb-2">Welcome to NLP Course!</h1>
+                    <p class="text-lg text-gray-600">Learn amazing things and master new skills.</p>
+                </div>
+                <div class="flex-shrink-0">
+                    <img src="https://placehold.co/100x100/662273/FFFFFF?text=Logo" alt="Course Logo" class="rounded-full shadow-md">
+                </div>
+            </div>
+
+            <!-- Navigation Bar -->
+            <nav class="mt-6 border-t border-gray-200 pt-4">
+                <ul class="flex flex-wrap justify-center sm:justify-start space-x-4 sm:space-x-6">
+                    <li><a href="#overview" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Overview</a></li>
+                    <li><a href="#logistics" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Logistics</a></li>
+                    <li><a href="#schedule" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Schedule</a></li>
+                    <li><a href="#modules" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Modules</a></li>
+                    <li><a href="#policies" class="text-[#662273] hover:text-[#9c59a9] font-medium transition duration-300">Policies</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Course Overview Section -->
+        <section id="overview" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2">Course Overview</h2>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                This course is designed to provide a comprehensive understanding of Natural Language Processing (NLP).
+                You will explore foundational concepts, practical applications, and advanced techniques in processing and understanding human language.
+                By the end of this course, you will have the skills and knowledge to confidently tackle real-world challenges in NLP.
+            </p>
+            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Duration:</strong> 8 Weeks</li>
+                <li><strong>Effort:</strong> 5-7 hours/week</li>
+                <li><strong>Prerequisites:</strong> Basic understanding of Python programming and linear algebra</li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <strong>Instructor:</strong> Prof. Jane Doe (<a href="https://janedoe.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA1" alt="TA 1" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Alice Smith (<a href="https://ta1.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA2" alt="TA 2" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Bob Johnson (<a href="https://ta2.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA3" alt="TA 3" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Charlie Brown (<a href="https://ta3.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA4" alt="TA 4" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Diana Miller (<a href="https://ta4.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA5" alt="TA 5" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Eve Davis (<a href="https://ta5.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+                <li>
+                    <div class="flex items-center space-x-3">
+                        <img src="https://placehold.co/40x40/9c59a9/FFFFFF?text=TA6" alt="TA 6" class="rounded-full shadow-sm">
+                        <strong>TA:</strong> Frank White (<a href="https://ta6.example.com" class="text-[#662273] hover:underline" target="_blank">Webpage</a>)
+                    </div>
+                </li>
+            </ul>
+            <div class="mt-6 text-center">
+                <a href="#modules" class="inline-block bg-[#662273] hover:bg-[#9c59a9] text-white font-bold py-3 px-6 rounded-lg shadow-md transition duration-300 ease-in-out transform hover:scale-105">
+                    Explore Course Modules
+                </a>
+            </div>
+        </section>
+
+        <!-- Logistics Section -->
+        <section id="logistics" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2">Logistics</h2>
+            <ul class="list-disc list-inside text-gray-700 mb-4 space-y-2">
+                <li><strong>Class Timing:</strong> Tuesdays & Thursdays, 10:00 AM - 11:30 AM IST</li>
+                <li><strong>Location:</strong> Room 301, Main Academic Building / Online via Zoom (link will be provided on course platform)</li>
+                <li><strong>Course Workload:</strong> This course will consist of approximately 20 lectures, 5 assignments, and 1 final project.</li>
+            </ul>
+            <p class="text-gray-700 leading-relaxed mb-6">
+                Please check the course announcement page regularly for any updates on timing or location changes.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Teaching Assistant Office Hours</h3>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>TA Name</th>
+                            <th>Office Hours</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Alice Smith</td>
+                            <td>Mon: 2:00 PM - 3:00 PM (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td>Bob Johnson</td>
+                            <td>Mon: 3:00 PM - 4:00 PM (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td>Charlie Brown</td>
+                            <td>Tue: 1:00 PM - 2:00 PM (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td>Diana Miller</td>
+                            <td>Tue: 2:00 PM - 3:00 PM (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td>Eve Davis</td>
+                            <td>Wed: 10:00 AM - 11:00 AM (Virtual)</td>
+                        </tr>
+                        <tr>
+                            <td>Frank White</td>
+                            <td>Wed: 11:00 AM - 12:00 PM (Virtual)</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Course Schedule Section -->
+        <section id="schedule" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2">Course Schedule</h2>
+            <div class="overflow-x-auto">
+                <table class="course-table">
+                    <thead>
+                        <tr>
+                            <th>Date</th>
+                            <th>Topic</th>
+                            <th>Post-Lecture Reading</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Week 1: Jul 29</td>
+                            <td>Introduction to NLP & History</td>
+                            <td>Chapter 1: Speech and Language Processing</td>
+                        </tr>
+                        <tr>
+                            <td>Week 1: Jul 31</td>
+                            <td>Text Preprocessing: Tokenization, Stemming, Lemmatization</td>
+                            <td>Chapter 2: Regular Expressions, Text Normalization, Edit Distance</td>
+                        </tr>
+                        <tr>
+                            <td>Week 2: Aug 5</td>
+                            <td>N-grams and Language Models</td>
+                            <td>Chapter 3: N-gram Language Models</td>
+                        </tr>
+                        <tr>
+                            <td>Week 2: Aug 7</td>
+                            <td>Text Classification & Naive Bayes</td>
+                            <td>Chapter 4: Naive Bayes and Sentiment Classification</td>
+                        </tr>
+                        <tr>
+                            <td>Week 3: Aug 12</td>
+                            <td>Vector Semantics: Word Embeddings (Word2Vec, GloVe)</td>
+                            <td>Chapter 6: Vector Semantics and Embeddings</td>
+                        </tr>
+                        <tr>
+                            <td>Week 3: Aug 14</td>
+                            <td>Neural Networks for NLP: Feedforward Networks</td>
+                            <td>Chapter 7: Neural Networks and Neural Language Models</td>
+                        </tr>
+                        <tr>
+                            <td>Week 4: Aug 19</td>
+                            <td>Recurrent Neural Networks (RNNs)</td>
+                            <td>Chapter 8: Recurrent Neural Networks</td>
+                        </tr>
+                        <tr>
+                            <td>Week 4: Aug 21</td>
+                            <td>LSTMs and GRUs</td>
+                            <td>Chapter 9: Sequence Processing with Recurrent Networks</td>
+                        </tr>
+                        <tr>
+                            <td>Week 5: Aug 26</td>
+                            <td>Attention Mechanisms & Transformers</td>
+                            <td>Chapter 10: Attention and Transformers</td>
+                        </tr>
+                        <tr>
+                            <td>Week 5: Aug 28</td>
+                            <td>BERT and Pre-trained Models</td>
+                            <td>Research Paper: BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</td>
+                        </tr>
+                        <tr>
+                            <td>Week 6: Sep 2</td>
+                            <td>Part-of-Speech Tagging</td>
+                            <td>Chapter 11: Part-of-Speech Tagging</td>
+                        </tr>
+                        <tr>
+                            <td>Week 6: Sep 4</td>
+                            <td>Named Entity Recognition (NER)</td>
+                            <td>Chapter 12: Named Entity Recognition</td>
+                        </tr>
+                        <tr>
+                            <td>Week 7: Sep 9</td>
+                            <td>Dependency Parsing</td>
+                            <td>Chapter 14: Dependency Parsing</td>
+                        </tr>
+                        <tr>
+                            <td>Week 7: Sep 11</td>
+                            <td>Semantic Role Labeling & Information Extraction</td>
+                            <td>Chapter 15: Semantic Role Labeling and Information Extraction</td>
+                        </tr>
+                        <tr>
+                            <td>Week 8: Sep 16</td>
+                            <td>Question Answering Systems</td>
+                            <td>Chapter 24: Question Answering</td>
+                        </tr>
+                        <tr>
+                            <td>Week 8: Sep 18</td>
+                            <td>Text Summarization</td>
+                            <td>Chapter 25: Text Summarization</td>
+                        </tr>
+                        <tr>
+                            <td>Week 9: Sep 23</td>
+                            <td>Machine Translation</td>
+                            <td>Chapter 26: Machine Translation</td>
+                        </tr>
+                        <tr>
+                            <td>Week 9: Sep 25</td>
+                            <td>Dialogue Systems and Chatbots</td>
+                            <td>Chapter 27: Dialogue Systems and Chatbots</td>
+                        </tr>
+                        <tr>
+                            <td>Week 10: Sep 30</td>
+                            <td>Ethics in NLP & Bias</td>
+                            <td>Research Articles on NLP Ethics</td>
+                        </tr>
+                        <tr>
+                            <td>Week 10: Oct 2</td>
+                            <td>Future Directions in NLP & Course Wrap-up</td>
+                            <td>Review all course materials</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <!-- Course Modules Section -->
+        <section id="modules" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2">Course Modules</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Module 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Module 1: Introduction to NLP</h3>
+                    <p class="text-gray-600">
+                        Overview of NLP, fundamental concepts, and setting up your development environment.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm mt-3 space-y-1">
+                        <li>Lesson 1.1: What is NLP?</li>
+                        <li>Lesson 1.2: Key Concepts and Terminology</li>
+                        <li>Lesson 1.3: Tools and Setup (e.g., NLTK, spaCy)</li>
+                    </ul>
+                </div>
+                <!-- Module 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Module 2: Text Preprocessing & Representation</h3>
+                    <p class="text-gray-600">
+                        Techniques for cleaning and preparing text data, and different ways to represent text for machine learning.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm mt-3 space-y-1">
+                        <li>Lesson 2.1: Tokenization, Stemming, Lemmatization</li>
+                        <li>Lesson 2.2: Bag-of-Words, TF-IDF</li>
+                        <li>Lesson 2.3: Word Embeddings (Word2Vec, GloVe)</li>
+                    </ul>
+                </div>
+                <!-- Module 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Module 3: Sequence Models & Deep Learning for NLP</h3>
+                    <p class="text-gray-600">
+                        Introduction to models that handle sequential data, including recurrent neural networks and transformers.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm mt-3 space-y-1">
+                        <li>Lesson 3.1: Recurrent Neural Networks (RNNs)</li>
+                        <li>Lesson 3.2: LSTMs and GRUs</li>
+                        <li>Lesson 3.3: Transformers and Attention Mechanisms</li>
+                    </ul>
+                </div>
+                <!-- Module 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm border border-gray-200 hover:shadow-md transition duration-300">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Module 4: NLP Applications & Advanced Topics</h3>
+                    <p class="text-gray-600">
+                        Practical applications of NLP and a look into current research areas.
+                    </p>
+                    <ul class="list-disc list-inside text-gray-600 text-sm mt-3 space-y-1">
+                        <li>Lesson 4.1: Sentiment Analysis & Text Classification</li>
+                        <li>Lesson 4.2: Named Entity Recognition & Question Answering</li>
+                        <li>Lesson 4.3: Generative Models (e.g., GPT) & Ethics in NLP</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Assignments and Project Policies Section -->
+        <section id="policies" class="w-full max-w-4xl bg-white shadow-lg rounded-xl p-8 mb-8">
+            <h2 class="text-3xl font-bold text-gray-800 mb-6 border-b-2 border-[#662273] pb-2">Assignments and Project Policies</h2>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Academic Integrity & Plagiarism</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                All work submitted in this course must be your own. Plagiarism, including copying code or text from others (students or online sources) without proper attribution, is strictly prohibited and will result in severe penalties, including a failing grade for the assignment/project and potential disciplinary action as per university policy. Familiarize yourself with the university's academic integrity guidelines.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Late Submission Policy</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Assignments are due by the specified date and time. Late submissions will be penalized. You will typically have a grace period of [e.g., 24 hours] with a [e.g., 10%] deduction. Submissions beyond this grace period will generally not be accepted, except in cases of documented emergencies or prior arrangements with the instructor.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Collaboration Policy</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Collaboration on assignments is encouraged for discussion of concepts and general approaches, but all submitted code and written answers must be your individual work. For projects, group collaboration is expected, and the contribution of each member should be clearly documented. Any specific collaboration guidelines for individual assignments or projects will be provided with the assignment description.
+            </p>
+
+            <h3 class="text-2xl font-bold text-gray-800 mb-3 mt-6">Consultation and Research Opportunities</h3>
+            <p class="text-gray-700 leading-relaxed mb-4">
+                Students are highly encouraged to consult with the instructor and teaching assistants during office hours or by appointment for guidance on assignments, projects, or course topics. If a project developed in this course shows significant potential for a research paper, students may, at their discretion, invite a TA or the instructor whose advice substantially benefited the work to be a co-author. This is not a requirement, but an opportunity to acknowledge significant contributions and foster academic collaboration.
+            </p>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="w-full max-w-4xl text-center text-gray-600 text-sm py-4">
+            <p>&copy; 2025 NLP Course. All rights reserved. | <a href="#" class="text-[#662273] hover:underline">Privacy Policy</a> | <a href="#" class="text-[#662273] hover:underline">Terms of Service</a></p>
+        </footer>
+    </div>
+</body>
+</html>
