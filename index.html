@@ -7,6 +7,9 @@
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+	<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CV88TUMp3/396I55m6XpLbE7z8uG+Wd5y1iN4/x0z9r1n4y8r4uQ==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
     <style>
         body {
             font-family: 'Inter', sans-serif;
@@ -45,6 +48,12 @@
 		.course-table a:hover,
 		a:active {
 		  color: #A020F0; /* A lighter or brighter shade of purple for interaction */
+		}
+		.fa-solid{
+			color:#e86100;
+		}
+		.fa-brands {
+			color:#E50914;
 		}
     </style>
 </head>
@@ -223,7 +232,12 @@
 				        <td style="border-bottom: 2px solid black;">4-Aug-25</td>
 				        <td style="border-bottom: 2px solid black;" rowspan="1"><strong>Recap</strong></td>
 				        <td style="border-bottom: 2px solid black;">Transformers</td>
-				        <td style="border-bottom: 2px solid black;"><b>Post-Reading:</b> <a href="https://jalammar.github.io/illustrated-transformer/" target="_blank">Illustrated Transformer</a><br><a href="https://youtu.be/LWMzyfvuehA?si=Wlmg9ixo0tz7ybz" target="_blank">Self Attention, Transformers</a></td>
+				        <td style="border-bottom: 2px solid black;"><b>Post-Reading:</b> <i class="fa-solid fa-rss"></i><a href="https://jalammar.github.io/illustrated-transformer/" target="_blank"> Illustrated Transformer</a>
+							<br><i class="fa-brands fa-youtube"></i><a href="https://youtu.be/LWMzyfvuehA?si=Wlmg9ixo0tz7ybz" target="_blank"> Self Attention, Transformers</a>
+							<br><i class="fa-brands fa-youtube"></i><a href="https://youtu.be/wjZofJX0v4M?si=DGTT1upVcNE-ocmc" target="_blank"> Intro to Transformers</a>
+							<br><i class="fa-brands fa-youtube"></i><a href="https://youtu.be/eMlx5fFNoYc?si=bTREk9axweUrAaJ1" target="_blank"> Attention in Transformers</a>
+							<br><a href="https://aclanthology.org/2024.acl-long.840/" target="_blank"> Dolma</a>
+							<br><a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/c1e2faff6f588870935f114ebe04a3e5-Paper-Conference.pdf" target="_blank"> Training Compute-Optimal Large Language Models</a></td>
 				      </tr>
 				      <tr>
 				        
@@ -231,14 +245,15 @@
 				        <td>7-Aug-25</td>
 				        <td  style="border-bottom: 2px solid black;" rowspan="5"><strong>Transformers</strong></td>
 				        <td>Attention</td>
-				        <td><b>Pre-Reading:</b><a href="https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html" target="_blank">Self Attention from Scratch</a><br><br><b>Post-Reading:</b> <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf" target="_blank">Flash Attention</a><br><a href="https://arxiv.org/abs/2310.01889" target="_blank">Ring Attention</a><br><a href="https://arxiv.org/abs/2506.04761" target="_blank">Log Linear Attention</a></td>
+				        <td><b>Pre-Reading:</b><i class="fa-solid fa-rss"></i><a href="https://sebastianraschka.com/blog/2023/self-attention-from-scratch.html" target="_blank"> Self Attention from Scratch</a><br><br>
+							<b>Post-Reading:</b> <a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/67d57c32e20fd0a7a302cb81d36e40d5-Paper-Conference.pdf" target="_blank">Flash Attention</a><br><a href="https://arxiv.org/abs/2310.01889" target="_blank">Ring Attention</a><br><a href="https://arxiv.org/abs/2506.04761" target="_blank">Log Linear Attention</a></td>
 				      </tr>
 				      <tr>
 				        
 				        <td>4</td>
 				        <td>11-Aug-25</td>
 				        <td>Feed Forward Layers</td>
-				        <td><b>Pre-Reading:</b><a href="https://openreview.net/forum?id=mYWsyTuiRp" target="_blank">Analyzing Feed-Forward Blocks in Transformers through the Lens of Attention Maps</a><br><br><b>Post-Reading:</b> <a href="https://medium.com/@baicenxiao/harnessing-the-power-of-mixture-of-experts-in-transformers-4140502e1c1e" target="_blank">Hands-on: Mixture of Experts with Transformers</a></td>
+				        <td><b>Pre-Reading:</b><a href="https://openreview.net/forum?id=mYWsyTuiRp" target="_blank">Analyzing Feed-Forward Blocks in Transformers through the Lens of Attention Maps</a><br><br><b>Post-Reading:</b> <i class="fa-solid fa-rss"></i> <a href="https://medium.com/@baicenxiao/harnessing-the-power-of-mixture-of-experts-in-transformers-4140502e1c1e" target="_blank"> Hands-on: Mixture of Experts with Transformers</a></td>
 				      </tr>
 					  <tr>
 				        
@@ -254,15 +269,21 @@
 				        <td>Normalization</td>
 				        <td><b>Pre-Reading:</b> <a href="https://www.iro.umontreal.ca/~vincentp/ift3395/lectures/backprop_old.pdf" target="_blank">Backpropogation</a> 
 							<br>  <a href="http://openaccess.thecvf.com/content_cvpr_2016/html/He_Deep_Residual_Learning_CVPR_2016_paper.html" target="_blank">Residual Network</a> <br> 
-							<a href="https://youtu.be/X0Jw4kgaFlg?si=15Dsm5f1nzYqRZit" target="_blank">Backpropagation</a> <br><a href="https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b" target="_blank">Yes you should understand backprop  </a><br><br><b>Post-Reading:</b> 
-							<a href="https://arxiv.org/abs/1607.06450" target="_blank">Layer Norm </a> <br> <a href="https://proceedings.neurips.cc/paper/2018/hash/36072923bfc3cf47745d704feb489480-Abstract.html" target="_blank">Batch Norm </a> <br> <a href="https://arxiv.org/abs/1602.07868" target="_blank">Weight Norm </a> <br> <a href="https://proceedings.neurips.cc/paper/2019/hash/1e8a19426224ca89e83cef47f1e7f53b-Abstract.html" target="_blank"> RMS Norm </a> <br> <a href="https://proceedings.mlr.press/v119/xiong20b" target="_blank">Pre Norm - On Layer Normalization in the Transformer Architecture </a> <br><a href="https://syhya.github.io/posts/2025-02-01-normalization/" target="_blank">Normalization in Deep Learning</a></td>
+							<i class="fa-brands fa-youtube"></i> <a href="https://youtu.be/X0Jw4kgaFlg?si=15Dsm5f1nzYqRZit" target="_blank"> Backpropagation</a> <br><i class="fa-solid fa-rss"></i> <a href="https://karpathy.medium.com/yes-you-should-understand-backprop-e2f06eab496b" target="_blank"> Yes you should understand backprop  </a><br><br><b>Post-Reading:</b> 
+							<a href="https://arxiv.org/abs/1607.06450" target="_blank">Layer Norm </a> 
+							<br> <a href="https://proceedings.neurips.cc/paper/2018/hash/36072923bfc3cf47745d704feb489480-Abstract.html" target="_blank">Batch Norm </a> 
+							<br> <a href="https://arxiv.org/abs/1602.07868" target="_blank">Weight Norm </a> 
+							<br> <a href="https://proceedings.neurips.cc/paper/2019/hash/1e8a19426224ca89e83cef47f1e7f53b-Abstract.html" target="_blank"> RMS Norm </a> 
+							<br> <a href="https://proceedings.mlr.press/v119/xiong20b" target="_blank">Pre Norm - On Layer Normalization in the Transformer Architecture </a> 
+							<br> <i class="fa-solid fa-rss"></i><a href="https://syhya.github.io/posts/2025-02-01-normalization/" target="_blank"> Normalization in Deep Learning</a></td>
 				      </tr>
 				      <tr>
 				        
 				        <td style="border-bottom: 2px solid black;">7</td>
 				        <td style="border-bottom: 2px solid black;">21-Aug-25</td>
 				        <td style="border-bottom: 2px solid black;">Optimizers</td>
-				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b> Gradient Descent <br><br><b>Post-Reading:</b>  <a href="https://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf" target="_blank">AdaGrad </a><br> <a href="https://youtu.be/SJ48OZ_qlrc?si=jTESc99DGt0aBBLy\nAdam" target="_blank"> RMSProp </a> - <a href="https://arxiv.org/abs/1412.6980" target="_blank">Adam</a></td>
+				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b> Gradient Descent <br><br><b>Post-Reading:</b>  <a href="https://www.jmlr.org/papers/volume12/duchi11a/duchi11a.pdf" target="_blank">AdaGrad </a>
+							<br> <i class="fa-brands fa-youtube"></i> <a href="https://youtu.be/SJ48OZ_qlrc?si=jTESc99DGt0aBBLy\nAdam" target="_blank"> RMSProp </a> <br> <a href="https://arxiv.org/abs/1412.6980" target="_blank">Adam</a></td>
 				      </tr>
 				      <tr>
 				        
@@ -307,7 +328,7 @@
 				        <td>15-Sep-25</td>
 				        <td style="border-bottom: 2px solid black;" rowspan="2"><strong>Quantization</strong></td>
 				        <td>TBA</td>
-				        <td><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization" target="_blank">Visual Guide to Quantization </a> <br> <a href="https://arxiv.org/abs/2208.07339"> LLM.int8 </a></td>
+				        <td><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> <i class="fa-solid fa-rss"></i> <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization" target="_blank"> Visual Guide to Quantization </a> <br> <a href="https://arxiv.org/abs/2208.07339"> LLM.int8 </a></td>
 				      </tr>
 				      <tr>
 				        
@@ -337,7 +358,8 @@
 				        <td style="border-bottom: 2px solid black;">17</td>
 				        <td style="border-bottom: 2px solid black;">9-Oct-25</td>
 				        <td style="border-bottom: 2px solid black;">Model, Data, Optimizer Shard</td>
-				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> <a href="https://arxiv.org/abs/2101.03961" target="_blank">Switch Transformer </a> <br> <a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high-level_overview" target="_blank">Distributed training at Scale </a></td>
+				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> <a href="https://arxiv.org/abs/2101.03961" target="_blank">Switch Transformer </a> 
+							<br><i class="fa-solid fa-rss"></i> <a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high-level_overview" target="_blank"> Distributed training at Scale </a></td>
 				      </tr>
 				      <tr>
 				        
@@ -608,7 +630,7 @@
             </p>
 			<br/>
             <p class="text-gray-700 leading-relaxed">
-                <strong>Submit team details</strong> <a style="color:purple" href="https://forms.gle/2S8zEavgxse6WkT48" target="_blank">here</a> 
+                <i class="fa-solid fa-circle-exclamation"></i> <strong>Submit team details</strong> <a style="color:purple" href="https://https.gle/2S8zEavgxse6WkT48" target="_blank">here</a> 
             </p>
             <div class="overflow-x-auto">
                 <table class="course-table">
