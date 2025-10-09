@@ -387,10 +387,12 @@
 							<i class="fa-solid fa-rss"></i> <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-quantization" target="_blank"> Visual Guide to Quantization </a> <br>
 							<!-- <a href="https://arxiv.org/abs/2208.07339"> LLM.int8 </a> <br> -->
 							<a href="https://proceedings.mlr.press/v202/xiao23c.html"> Smooth Quant </a> <br>
+							<a href="https://proceedings.neurips.cc/paper_files/paper/2022/hash/1caf09c9f4e6b0150b06a07e77f2710c-Abstract-Conference.html"> Optimal Brain Compression (OBQ) </a> <br>
 							<a href="https://openreview.net/forum?id=nZeVKeeFYf9"> LoRA: Low Rank Adaptation </a> <br>
 							<a href="https://proceedings.neurips.cc/paper_files/paper/2023/hash/1feb87871436031bdc0f2beaa62a049b-Abstract-Conference.html"> QLoRA: Efficient Finetuning of Quantized LLMs </a> <br>
 							<a href="https://arxiv.org/abs/2210.17323"> GPTQ: Accurate Post-Training Quantization </a> <br>
 							<a href="https://proceedings.mlsys.org/paper_files/paper/2024/hash/42a452cbafa9dd64e9ba4aa95cc1ef21-Abstract-Conference.html"> AWQ: Activation-aware Weight Quantization </a> <br>
+							<a href="https://proceedings.neurips.cc/paper_files/paper/2022/file/adf7fa39d65e2983d724ff7da57f00ac-Paper-Conference.pdf"> Zero Quant </a> <br>
 							<a href="https://arxiv.org/abs/2208.07339"> LLM.int8 </a></td>
 				      </tr>
 				      <!-- <tr>
@@ -407,15 +409,30 @@
 				        <td>6-Oct-25</td>
 				        <td style="border-bottom: 2px solid black;" rowspan="2"><strong>Distributed Training</strong></td>
 				        <td>Distributed Pretraining</td>
-				        <td><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> TBA</td>
+				        <td>
+							<b>Post-Reading:</b> TBA
+							<b>Post-Reading:</b> <a href="https://arxiv.org/abs/2101.03961" target="_blank">Switch Transformer </a> 
+							<br><i class="fa-solid fa-rss"></i> <a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high-level_overview" target="_blank"> Distributed training at Scale </a>
+							<br><a href="https://arxiv.org/abs/2101.03961" target="_blank">Switch Transformer </a> 
+							<br><a href="https://arxiv.org/abs/2101.03961" target="_blank">Megatron-LM</a> 
+							<br><a href="https://arxiv.org/abs/2104.04473" target="_blank">Efficient Large-Scale Language Model Training on GPU Clusters Using Megatron-LM</a> 
+							<br><i class="fa-brands fa-youtube"></i><a href="https://youtu.be/9MvD-XsowsE?si=WPiopoj_Gkm6AUyx&t=1677" target="_blank"> Large Scale Distributed Training </a>
+						</td>
 				      </tr>
 				      <tr>
 				        
 				        <td style="border-bottom: 2px solid black;">17</td>
 				        <td style="border-bottom: 2px solid black;">9-Oct-25</td>
-				        <td style="border-bottom: 2px solid black;">Model, Data, Optimizer Shard</td>
-				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b> TBA<br><br><b>Post-Reading:</b> <a href="https://arxiv.org/abs/2101.03961" target="_blank">Switch Transformer </a> 
-							<br><i class="fa-solid fa-rss"></i> <a href="https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high-level_overview" target="_blank"> Distributed training at Scale </a></td>
+				        <td style="border-bottom: 2px solid black;">Sharding</td>
+				        <td style="border-bottom: 2px solid black;">
+							<b>Post-Reading:</b> 
+							<a href="https://arxiv.org/abs/1910.02054" target="_blank">ZeRO: Memory Optimizations Toward Training Trillion Parameter Models</a> 
+							<br><i class="fa-solid fa-rss"></i> <a href="https://dudeperf3ct.github.io/posts/ultrascale_zero_deepspeed/" target="_blank"> ZeRO </a>
+							<br><a href="https://arxiv.org/abs/2006.15704" target="_blank">PyTorch Distributed</a> 
+							<br><a href="https://arxiv.org/abs/2507.04786v1" target="_blank">NCCL</a> 
+							<br><a href="https://arxiv.org/abs/1811.06965" target="_blank">GPipe</a>
+							<br><i class="fa fa-github"></i> <a href="https://dudeperf3ct.github.io/posts/ultrascale_zero_deepspeed/" target="_blank"> Picotron </a>
+						</td>
 				      </tr>
 				      <tr>
 				        
@@ -424,7 +441,19 @@
 				        <!-- <td rowspan="2">Mixture of Experts</td> -->
 						<td style="border-bottom: 2px solid black;"><strong>Mixture of Experts</strong></td>
 				        <td style="border-bottom: 2px solid black;">Introduction - Conceptual, Architecture</td>
-				        <td style="border-bottom: 2px solid black;"><b>Pre-Reading:</b>  <a href="https://web.archive.org/web/20140811051022id_/http://courses.cs.tamu.edu/rgutier/cpsc636_s10/jacobs1991moe.pdf" target="_blank">Adaptive Mixture of Local Experts </a> <br> <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Hierarchical+mixtures+of+experts+and+the+EM+algorithm&btnG=" target="_blank">Hierarchical Mixture of Experts</a><br><br><b>Post-Reading:</b>  <a href="https://minjiazhang.github.io/courses/fall24-resource/Mamba.pdf" target="_blank">Mamba </a> <br> <a href="https://arxiv.org/abs/2501.12948" target="_blank"> DeepSeek </a></td>
+				        <td style="border-bottom: 2px solid black;">
+							<b>Pre-Reading:</b>  
+							<a href="https://web.archive.org/web/20140811051022id_/http://courses.cs.tamu.edu/rgutier/cpsc636_s10/jacobs1991moe.pdf" target="_blank">Adaptive Mixture of Local Experts </a> 
+							<br> <a href="https://scholar.google.com/scholar?hl=en&as_sdt=0%2C5&q=Hierarchical+mixtures+of+experts+and+the+EM+algorithm&btnG=" target="_blank">Hierarchical Mixture of Experts</a>
+							<br><br><b>Post-Reading:</b>  
+							<a href="https://minjiazhang.github.io/courses/fall24-resource/Mamba.pdf" target="_blank">Mamba </a> 
+							<a href="https://arxiv.org/abs/2501.12948" target="_blank"> DeepSeek </a>
+							<a href="https://arxiv.org/pdf/2201.05596" target="_blank">DeepSpeed MoE</a><br>
+							<a href="https://arxiv.org/abs/2401.06066" target="_blank">DeepSeek MoE</a><br>
+							<i class="fa-brands fa-youtube"></i> <a href="https://www.youtube.com/watch?v=LPv1KfUXLCo" target="_blank">Mixture of Experts</a><br>
+							<i class="fa-solid fa-rss"></i> <a href="https://newsletter.maartengrootendorst.com/p/a-visual-guide-to-mixture-of-experts" target="_blank">A Visual Guide to Mixture of Experts</a><br>
+							<i class="fa-solid fa-rss"></i> <a href="https://huggingface.co/blog/moe" target="_blank">MoE Explained</a>
+						</td>
 				      </tr>
 				      <!-- <tr>
 
@@ -608,7 +637,7 @@
 				    </tr>
 				    <tr style="color: red;">
 				      <td>Project Mid Submission</td>
-				      <td>1-Oct</td>
+				      <td>2-Oct</td>
 				    </tr>
 				    <tr style="color: red;">
 				      <td>A2 Due</td>
@@ -616,7 +645,7 @@
 				    </tr>
 				    <tr style="color: purple;">
 				      <td>Project Mid Grades</td>
-				      <td>12-Oct</td>
+				      <td>13-Oct</td>
 				    </tr>
 				    <tr>
 				      <td>A3 Release</td>
